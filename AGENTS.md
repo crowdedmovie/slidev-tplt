@@ -173,4 +173,8 @@ Keep temporary task or branch notes in the thread, existing issue, or PR/MR. If 
 
 ### Repository-Specific Instructions
 
-Add only information relevant to this repository. Omit unused sections and avoid speculative commands or requirements.
+Ce dépôt est un template Slidev destiné à être cloné pour créer des présentations avec un agent. Les commandes et exemples figurent dans le README. Privilégier une architecture simple et les fonctionnalités natives de Slidev.
+
+Préserver les identifiants et valeurs `dragPos` existants lors de toute modification sans rapport avec leur position : ils peuvent avoir été réglés manuellement. Déplacer un diagramme complet comme un objet unique lorsque pertinent. Distinguer compilation, test interactif et appréciation visuelle dans les comptes rendus.
+
+La priorité actuelle est un catalogue de fonctionnalités fiable et réutilisable. La direction graphique et le choix d’un ou plusieurs thèmes seront définis avec le mainteneur après cette phase.

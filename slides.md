@@ -29,7 +29,7 @@ layout: center
 ---
 layout: default
 dragPos:
-  caption: 540,320,340,110,0
+  caption: 55,431,488,78
 ---
 
 # Move an independent element
@@ -68,3 +68,74 @@ Use Markdown, Vue components, animations, drawings and draggable objects.
 <!--
 Speaker notes live here. Replace this deck with your own content.
 -->
+
+
+---
+layout: default
+---
+
+# Make a point, one click at a time
+
+<v-clicks>
+
+- Introduce the problem.
+- Explain the mechanism.
+- Emphasize the result.
+
+</v-clicks>
+
+<div v-after class="mt-6 text-xl">A conclusion follows the final reveal.</div>
+
+---
+layout: default
+---
+
+# Code evolves with the explanation
+
+````md magic-move
+```js
+const total = prices => prices.length
+```
+```js
+const total = prices => prices.reduce((sum, price) => sum + price, 0)
+```
+````
+
+---
+layout: default
+---
+
+# Try the calculation
+
+```ts {monaco-run} {autorun:false}
+const price = 12
+const quantity = 3
+console.log(price * quantity)
+```
+
+---
+layout: default
+dragPos:
+  flow: 90,170,690,250,0
+---
+
+# Move the whole diagram
+
+Double-click the diagram to edit its position and size.
+
+<v-drag pos="flow">
+
+```mermaid
+flowchart LR
+  Idea --> Outline --> Slides --> Review
+```
+
+</v-drag>
+
+---
+layout: default
+---
+
+# A small interactive component
+
+<CounterDemo />
