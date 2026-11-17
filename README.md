@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site statique dans `dist/`. `npm run export` lance l’export PDF : il nécessite les dépendances de navigateur de Slidev/Playwright ; cet export reste à vérifier sur votre machine. Le mode présentateur est accessible par `/presenter/`, la vue d’ensemble par `/overview/`.
+Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site statique dans `dist/`. `npm run export` lance l’export PDF : il nécessite les dépendances de navigateur de Slidev/Playwright ; installer `playwright-chromium` est nécessaire pour la commande CLI ; cet export reste à vérifier sur votre machine. Le mode présentateur est accessible par `/presenter/`, la vue d’ensemble par `/overview/`.
 
 ## Nouvelle présentation
 
@@ -22,7 +22,9 @@ Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site s
 
 ## Catalogue de départ
 
-La présentation montre des révélations `v-click`, `v-clicks`, `v-after`, une transition, des notes, Mermaid, un objet déplaçable, un diagramme dans `<v-drag>`, Shiki Magic Move, Monaco Runner et un composant Vue. Les dessins manuels sont activés avec `drawings.persist`. Ces exemples compilent ; leur comportement interactif n’a pas encore été vérifié en navigateur. Les fonctionnalités suivantes restent à illustrer et vérifier : VueUse Motion, View Transitions, `v-mark`, flèches déplaçables, surbrillance progressive de lignes et table des matières.
+Le catalogue comprend 23 slides : sommaire, révélations et transitions, Motion, objets déplaçables, Mermaid, flèches, annotations, images, tableaux, formules, code, Monaco, composant Vue, layouts et notes. Utiliser le sommaire ou la vue d’ensemble pour accéder aux exemples. Le style est provisoire.
+
+La compilation ne garantit pas les interactions ni le rendu visuel. Les View Transitions sont expérimentales et dépendent du navigateur ; le Runner Monaco prend en charge JavaScript et TypeScript par défaut.
 
 Pour les autres possibilités et leurs restrictions, voir la [documentation Slidev](https://sli.dev/features/) ; [Monaco Runner](https://sli.dev/features/monaco-run) exécute JavaScript et TypeScript par défaut. Les View Transitions dépendent du navigateur. Le build peut être volumineux avec Monaco et Mermaid.
 
@@ -41,3 +43,7 @@ Le lockfile testé installe Slidev 52.20.1 et le thème default 0.25.0. `npm ci`
 Le travail commence par un catalogue technique de fonctionnalités, puis une exploration visuelle avec le mainteneur. Le thème par défaut actuel est provisoire : le nombre de thèmes, leurs couleurs, formes et typographies restent à définir. Voir [BACKLOG.md](BACKLOG.md) pour les travaux restants. Les exemples du fichier `slides.md` constituent pour l’instant le catalogue ; une carte distincte pourra être ajoutée si sa taille le justifie.
 
 Le dépôt est destiné à être cloné, sans publication de paquet ni procédure de release définie à ce stade. Les builds sont locaux ; aucune mise en ligne ou CI n’est configurée. Les conventions de branches, de vérification et de livraison figurent dans [AGENTS.md](AGENTS.md).
+
+## Ajouter une image
+
+Placer une capture, par exemple `capture.png`, dans `public/images/` puis la référencer dans une slide : `![Description](/images/capture.png)`. La slide 16 montre une image locale et sa légende dans un même conteneur `<v-drag>` : remplacer le chemin de l’image et adapter son texte alternatif. La position du groupe est enregistrée dans `dragPos`. Le collage direct du presse-papiers dans une slide n’a pas été vérifié ; l’ajout d’un fichier et de sa référence est le parcours documenté.
