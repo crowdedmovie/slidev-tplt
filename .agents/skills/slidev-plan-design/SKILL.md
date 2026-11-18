@@ -1,27 +1,30 @@
 ---
 name: slidev-plan-design
-description: "Préparer le plan slide par slide et la direction visuelle d’une présentation destinée à ce template Slidev, à partir d’un brief sourcé ou d’éléments équivalents."
+description: "Concevoir le déroulé, la direction visuelle et les interactions d’une présentation Slidev à partir d’un brief."
 disable-model-invocation: true
 ---
 
 # Plan et direction visuelle d’une présentation Slidev
 
-## 1. Reprendre le cadrage
+## 1. Reprendre le cadrage et étudier le catalogue
 
-Utilise le `presentation-brief.md` du projet, le brief fourni ou les informations et sources équivalentes données par l’utilisateur. Vérifie que tu travailles sur le bon sujet. Reprends l’objectif, le public, la durée, les contraintes et les décisions déjà prises. Demande seulement les précisions qui changeraient le déroulé ou la direction visuelle. Si une preuve essentielle manque, signale ce qu’il faut vérifier et propose un plan provisoire si le reste permet d’avancer.
+- Utilise le `presentation-brief.md` du projet ou les éléments équivalents fournis. Vérifie le sujet, l’objectif, le niveau du public, la durée de l’exposé, la place des questions et les contraintes de diffusion. Demande seulement les précisions qui changeraient le déroulé ou le rendu. Si une preuve essentielle manque, indique quoi vérifier et avance sur le reste.
+- Lis le code du [catalogue Slidev](../../../catalogue.md) et les indications du [README](../../../README.md). Repère les dispositions, les styles et les fonctionnalités qui servent le sujet. Pour les exemples retenus, examine leur syntaxe, leur déclenchement et leur rendu. Ouvre le catalogue si l’effet ou sa lisibilité mérite d’être vu.
+- Adapte la direction visuelle au sujet, au public et aux conditions de présentation. Choisis la palette, la typographie, la hiérarchie, les dispositions et les modes de rendu utiles. Appuie-toi sur les exemples du catalogue pour rendre ces choix concrets et indique les adaptations nécessaires.
 
-## 2. Construire le déroulé
+## 2. Concevoir la mise en scène et le rythme
 
-- Organise les slides autour du message à retenir. Choisis le nombre de slides et répartis le temps entre les sections en tenant compte des démonstrations et des questions prévues.
-- Pour chaque slide, indique son titre provisoire, son rôle dans le déroulé, son message principal, les preuves ou exemples à montrer et leurs sources précises issues du brief. Précise ce qui peut rester à l’oral ou passer en annexe si cela aide à tenir la durée.
-- Indique le visuel, le layout ou l’interaction utile pour chaque slide, avec sa fonction et les ressources nécessaires. Un visuel est facultatif. Signale les éléments à créer, à obtenir ou à valider.
+Organise le déroulé autour du message à retenir. Choisis le nombre de slides et répartis le temps en comptant les étapes à l’écran, les démonstrations et les questions prévues. Pour chaque slide, consigne les éléments suivants.
 
-## 3. Définir la direction visuelle
+- Le titre provisoire, le rôle dans le déroulé, le message principal, le temps prévu et les preuves ou exemples avec leurs sources.
+- La composition visuelle et les ressources à réutiliser, créer, obtenir ou vérifier. Précise ce qui reste à l’oral ou passe en annexe si cela aide à tenir la durée.
+- Ce qui est visible à l’arrivée. Pour une slide interactive, indique dans l’ordre l’action et le résultat de chaque clic, les effets qui se déclenchent ensemble et les éléments qui restent visibles ou disparaissent. Associe chaque effet à un moment de l’oral et nomme le mécanisme Slidev envisagé. Par exemple, le dernier élément d’une comparaison apparaît avec `v-click` et une annotation `v-mark` regroupe au même clic les éléments que le public vient de découvrir.
+- La règle de transition entre les slides et les exceptions utiles. Définis une transition par défaut si elle suffit à la plupart des enchaînements.
 
-Consulte le [README](../../../README.md) pour les palettes disponibles et le [catalogue Slidev](../../../slides.md) pour les exemples réutilisables. Recommande une palette et le ou les modes de rendu à prévoir selon le sujet et les conditions de présentation. Décris les dispositions à réutiliser et les règles de hiérarchie et de lisibilité. Respecte les préférences visuelles déjà données et explique brièvement les choix qui aident le public à suivre le propos.
+Dose les interactions selon le public, le temps disponible et le rôle de la slide. Une slide statique convient si le public doit lire des données à son rythme. Si un mode de diffusion repose sur un rendu statique, précise l’état qui doit y être lisible.
 
-## 4. Livrer le plan
+## 3. Livrer le plan
 
-Écris `presentation-plan.md` à la racine du clone, sauf si l’utilisateur demande une autre destination ou une réponse dans le chat. Rassemble le déroulé numéroté, le budget de temps, la direction visuelle et les décisions ou ressources encore ouvertes. Vérifie que les sections tiennent dans la durée, que chaque slide sert le message et que les affirmations importantes renvoient à une source ou à un point à vérifier.
+Écris `presentation-plan.md` à la racine du clone, sauf si l’utilisateur demande une autre destination ou une réponse dans le chat. Rassemble le déroulé numéroté, le budget de temps, la direction visuelle et les décisions ou ressources encore ouvertes. Vérifie que le total tient dans la durée, que les affirmations importantes renvoient à des sources et que les séquences d’affichage sont assez précises pour être implémentées.
 
-Si seul le plan est demandé, remets-le pour relecture et arrête-toi sans modifier `slides.md`. Si l’utilisateur demande la présentation complète, transmets le plan à l’étape de création. Attends son accord s’il a demandé une revue intermédiaire et demande-lui de trancher seulement les décisions qui bloquent la suite.
+Si seul le plan est demandé, remets-le pour relecture et arrête-toi sans modifier `slides.md`. Pour une demande de présentation complète, transmets-le à l’étape de réalisation. Attends l’accord de l’utilisateur s’il a demandé une revue intermédiaire.
