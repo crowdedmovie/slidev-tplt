@@ -18,7 +18,7 @@ Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site s
 1. Cloner le dépôt et installer les dépendances avec `npm ci`.
 2. Appeler [`$slidev-brief-research`](.agents/skills/slidev-brief-research/SKILL.md) avec le sujet, le public, la durée et les documents disponibles. Confirmer le cadrage proposé pour que l’agent lance la recherche et produise `presentation-brief.md`.
 3. Appeler [`$slidev-plan-design`](.agents/skills/slidev-plan-design/SKILL.md) avec le brief pour préparer le déroulé et la direction visuelle dans `presentation-plan.md`.
-4. Suivre le plan pour remplacer les exemples de `slides.md`. Le composant `components/CounterDemo.vue` est un exemple à adapter ou retirer. Tester les clics, les interactions et la lisibilité en mode présentation, puis lancer le build et contrôler l’export souhaité.
+4. Appeler [`$slidev-build-verify`](.agents/skills/slidev-build-verify/SKILL.md) avec le plan pour réaliser les slides, rédiger les notes d’oral et vérifier le build et le rendu avec Playwright.
 
 ## Palette de couleurs
 
