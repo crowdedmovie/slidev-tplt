@@ -1,6 +1,6 @@
 # slidev-tplt
 
-Base réutilisable pour créer des présentations [Slidev](https://sli.dev/). Le fichier `slides.md` est à la fois une présentation de démonstration et un point de départ à remplacer pour chaque sujet.
+Base réutilisable pour créer des présentations [Slidev](https://sli.dev/). Le fichier `slides.md` est l’entrée du diaporama. Il affiche le [catalogue d’exemples](catalogue.md) au départ et peut être remplacé pour chaque sujet.
 
 ## Démarrage
 
@@ -16,13 +16,13 @@ Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site s
 ## Nouvelle présentation
 
 1. Cloner le dépôt et installer les dépendances avec `npm ci`.
-2. Appeler [`$slidev-brief-research`](.agents/skills/slidev-brief-research/SKILL.md) avec le sujet, le public, la durée et les documents disponibles. Confirmer le cadrage proposé pour que l’agent lance la recherche et produise `presentation-brief.md`.
-3. Appeler [`$slidev-plan-design`](.agents/skills/slidev-plan-design/SKILL.md) avec le brief pour préparer le déroulé et la direction visuelle dans `presentation-plan.md`.
-4. Appeler [`$slidev-build-verify`](.agents/skills/slidev-build-verify/SKILL.md) avec le plan pour réaliser les slides, rédiger les notes d’oral et vérifier le build et le rendu avec Playwright.
+2. Appeler [`$slidev-brief-research`](.agents/skills/slidev-brief-research/SKILL.md) avec le sujet, le public, la durée et les documents disponibles. Répondre aux questions de cadrage avant que l’agent lance la recherche et produise `presentation-brief.md`.
+3. Appeler [`$slidev-plan-design`](.agents/skills/slidev-plan-design/SKILL.md) avec le brief pour préparer le déroulé, le rendu, les séquences de clics et les transitions dans `presentation-plan.md`.
+4. Appeler [`$slidev-build-verify`](.agents/skills/slidev-build-verify/SKILL.md) avec le plan pour réaliser les slides, rédiger les notes d’oral et vérifier la compilation, le rendu et les interactions.
 
 ## Palette de couleurs
 
-Au début de `slides.md`, change `htmlAttrs.data-palette`. La touche **D** et le bouton soleil/lune de Slidev basculent entre les modes. Les couleurs sont définies dans `styles/index.css`.
+Pour changer de palette, règle `htmlAttrs.data-palette` dans le frontmatter initial du fichier ouvert dans Slidev. Pour une présentation en cours, il s’agit par défaut de `slides.md`. La touche **D** et le bouton soleil/lune de Slidev basculent entre les modes. Les couleurs sont définies dans `styles/index.css`.
 
 | Valeur | Clair | Sombre |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ Au début de `slides.md`, change `htmlAttrs.data-palette`. La touche **D** et le
 
 ## Catalogue de départ
 
-Le catalogue comprend 23 slides : sommaire, révélations et transitions, Motion, objets déplaçables, Mermaid, flèches, annotations, images, tableaux, formules, code, Monaco, composant Vue, layouts et notes. Utiliser le sommaire ou la vue d’ensemble pour accéder aux exemples. Le style est provisoire.
+Les 23 exemples restent disponibles dans [`catalogue.md`](catalogue.md) après le remplacement de `slides.md`. Lance `npm run dev -- catalogue.md` depuis la racine pour les consulter. Le sommaire et la vue d’ensemble donnent accès aux exemples de révélations, transitions, annotations, objets déplaçables, diagrammes, code et autres fonctionnalités. Le style sert de point de départ.
 
 La compilation ne garantit pas les interactions ni le rendu visuel. Les View Transitions sont expérimentales et dépendent du navigateur ; le Runner Monaco prend en charge JavaScript et TypeScript par défaut.
 
@@ -53,10 +53,10 @@ Le lockfile testé installe Slidev 52.20.1 et le thème default 0.25.0. `npm ci`
 
 ## État du projet
 
-Le travail commence par un catalogue technique de fonctionnalités, puis une exploration visuelle avec le mainteneur. Le thème par défaut actuel est provisoire : le nombre de thèmes, leurs couleurs, formes et typographies restent à définir. Voir [BACKLOG.md](BACKLOG.md) pour les travaux restants. Les exemples du fichier `slides.md` constituent pour l’instant le catalogue ; une carte distincte pourra être ajoutée si sa taille le justifie.
+Le travail commence par un catalogue technique de fonctionnalités, puis une exploration visuelle avec le mainteneur. Le thème par défaut actuel est provisoire : le nombre de thèmes, leurs couleurs, formes et typographies restent à définir. Voir [BACKLOG.md](BACKLOG.md) pour les travaux restants.
 
 Le dépôt est destiné à être cloné, sans publication de paquet ni procédure de release définie à ce stade. Les builds sont locaux ; aucune mise en ligne ou CI n’est configurée. Les conventions de branches, de vérification et de livraison figurent dans [AGENTS.md](AGENTS.md).
 
 ## Ajouter une image
 
-Placer une capture, par exemple `capture.png`, dans `public/images/` puis la référencer dans une slide : `![Description](/images/capture.png)`. La slide 16 montre une image locale et sa légende dans un même conteneur `<v-drag>` : remplacer le chemin de l’image et adapter son texte alternatif. La position du groupe est enregistrée dans `dragPos`. Le collage direct du presse-papiers dans une slide n’a pas été vérifié ; l’ajout d’un fichier et de sa référence est le parcours documenté.
+Placer une capture, par exemple `capture.png`, dans `public/images/` puis la référencer dans une slide : `![Description](/images/capture.png)`. La slide 16 du [catalogue](catalogue.md) montre une image locale et sa légende dans un même conteneur `<v-drag>` : remplacer le chemin de l’image et adapter son texte alternatif. La position du groupe est enregistrée dans `dragPos`. Le collage direct du presse-papiers dans une slide n’a pas été vérifié ; l’ajout d’un fichier et de sa référence est le parcours documenté.
