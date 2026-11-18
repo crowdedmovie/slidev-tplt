@@ -1,0 +1,13 @@
+<body>
+  <script>
+    // Seed Slidev's preference before its client reads local storage.
+    try {
+      const key = 'slidev-cursor-style'
+      if (localStorage.getItem(key) === null)
+        localStorage.setItem(key, 'laser')
+    }
+    catch {
+      // Slidev can still start if the browser blocks local storage.
+    }
+  </script>
+</body>

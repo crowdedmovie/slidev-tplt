@@ -1,0 +1,135 @@
+/* Catppuccin Latte and Mocha: https://catppuccin.com/palette/ */
+html[data-palette='catppuccin'] {
+  --deck-background: #eff1f5;
+  --deck-text: #4c4f69;
+  --deck-panel: #e6e9ef;
+  --deck-border: #acb0be;
+  --deck-accent: #8839ef;
+  --deck-on-accent: #eff1f5;
+  --deck-secondary: #9c4f15;
+}
+
+html.dark[data-palette='catppuccin'] {
+  --deck-background: #1e1e2e;
+  --deck-text: #cdd6f4;
+  --deck-panel: #313244;
+  --deck-border: #585b70;
+  --deck-accent: #cba6f7;
+  --deck-on-accent: #1e1e2e;
+  --deck-secondary: #fab387;
+}
+
+/* Nord Snow Storm and Polar Night: https://www.nordtheme.com/docs/colors-and-palettes/ */
+html[data-palette='nord'] {
+  --deck-background: #eceff4;
+  --deck-text: #2e3440;
+  --deck-panel: #e5e9f0;
+  --deck-border: #d8dee9;
+  --deck-accent: #2e3440;
+  --deck-on-accent: #eceff4;
+  --deck-secondary: #5e81ac;
+}
+
+html.dark[data-palette='nord'] {
+  --deck-background: #2e3440;
+  --deck-text: #eceff4;
+  --deck-panel: #3b4252;
+  --deck-border: #4c566a;
+  --deck-accent: #88c0d0;
+  --deck-on-accent: #2e3440;
+  --deck-secondary: #ebcb8b;
+}
+
+/* Gruvbox Light and Dark: https://github.com/morhetz/gruvbox */
+html[data-palette='gruvbox'] {
+  --deck-background: #fbf1c7;
+  --deck-text: #3c3836;
+  --deck-panel: #ebdbb2;
+  --deck-border: #bdae93;
+  --deck-accent: #af3a03;
+  --deck-on-accent: #fbf1c7;
+  --deck-secondary: #79740e;
+}
+
+html.dark[data-palette='gruvbox'] {
+  --deck-background: #282828;
+  --deck-text: #ebdbb2;
+  --deck-panel: #3c3836;
+  --deck-border: #665c54;
+  --deck-accent: #fe8019;
+  --deck-on-accent: #282828;
+  --deck-secondary: #b8bb26;
+}
+
+/* Rose Pine Dawn and main: https://rosepinetheme.com/palette/ */
+html[data-palette='rose-pine'] {
+  --deck-background: #faf4ed;
+  --deck-text: #575279;
+  --deck-panel: #fffaf3;
+  --deck-border: #dfdad9;
+  --deck-accent: #286983;
+  --deck-on-accent: #faf4ed;
+  --deck-secondary: #b4637a;
+}
+
+html.dark[data-palette='rose-pine'] {
+  --deck-background: #191724;
+  --deck-text: #e0def4;
+  --deck-panel: #1f1d2e;
+  --deck-border: #403d52;
+  --deck-accent: #9ccfd8;
+  --deck-on-accent: #191724;
+  --deck-secondary: #ebbcba;
+}
+
+/* Solarized Light and Dark: https://ethanschoonover.com/solarized/ */
+html[data-palette='solarized'] {
+  --deck-background: #fdf6e3;
+  --deck-text: #586e75;
+  --deck-panel: #eee8d5;
+  --deck-border: #93a1a1;
+  --deck-accent: #073642;
+  --deck-on-accent: #fdf6e3;
+  --deck-secondary: #268bd2;
+}
+
+html.dark[data-palette='solarized'] {
+  --deck-background: #002b36;
+  --deck-text: #93a1a1;
+  --deck-panel: #073642;
+  --deck-border: #586e75;
+  --deck-accent: #2aa198;
+  --deck-on-accent: #002b36;
+  --deck-secondary: #b58900;
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .slidev-layout {
+  background-color: var(--deck-background);
+  color: var(--deck-text);
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-accent-text {
+  color: var(--deck-accent);
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-accent-block {
+  background-color: var(--deck-accent);
+  color: var(--deck-on-accent);
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-panel {
+  background-color: var(--deck-panel);
+  color: var(--deck-text);
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-highlight {
+  border-color: var(--deck-secondary);
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-highlight-icon {
+  background-color: var(--deck-secondary);
+}
+
+:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .slidev-layout :is(th, td) {
+  border-color: var(--deck-border);
+}
