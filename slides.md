@@ -105,8 +105,8 @@ layout: default
 ---
 layout: default
 dragPos:
-  caption: 55,431,488,78
-  badge: 600,190,180,90,0
+  caption: 65,376,707,75
+  badge: 517,163,307,118
 ---
 
 # Déplacer une carte
@@ -122,7 +122,7 @@ Double-cliquez un objet pour le sélectionner, puis déplacez-le ou redimensionn
 ---
 layout: default
 dragPos:
-  flow: 90,170,690,250,0
+  flow: 133,175,640,126
 ---
 
 # Déplacer une architecture
@@ -141,7 +141,7 @@ flowchart LR
 ---
 layout: default
 dragPos:
-  connection: 450,300,200,0
+  connection: 302,175,330,-3
 ---
 
 # Flèches et connexions
@@ -206,7 +206,7 @@ layout: default
 ---
 layout: default
 dragPos:
-  screenshot: 250,180,480,300,0
+  screenshot: 486,116,446,304
 ---
 
 # Image et légende déplaçables
