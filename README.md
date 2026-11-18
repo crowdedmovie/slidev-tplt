@@ -16,7 +16,7 @@ Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site s
 ## Nouvelle présentation
 
 1. Cloner le dépôt et installer les dépendances avec `npm ci`.
-2. Fournir à l’agent le sujet, le public, la durée et les contraintes. Lui demander d’utiliser le skill `slidev-presentation` dans `.agents/skills/slidev-presentation/` ; vérifier que votre outil prend en charge les skills locaux.
+2. Fournir à l’agent le sujet, le public, la durée et les contraintes.
 3. Définir un plan et une direction visuelle adaptés, puis remplacer les exemples de `slides.md`. Le composant `components/CounterDemo.vue` est un exemple à adapter ou retirer.
 4. Tester les clics, les interactions et la lisibilité en mode présentation, puis lancer le build et contrôler l’export souhaité.
 
