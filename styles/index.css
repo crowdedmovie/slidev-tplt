@@ -1,0 +1,51 @@
+/* Catppuccin Latte and Mocha: https://catppuccin.com/palette/ */
+html[data-palette='catppuccin'] {
+  --deck-background: #eff1f5;
+  --deck-text: #4c4f69;
+  --deck-panel: #e6e9ef;
+  --deck-border: #acb0be;
+  --deck-accent: #8839ef;
+  --deck-on-accent: #eff1f5;
+  --deck-secondary: #9c4f15;
+}
+
+html.dark[data-palette='catppuccin'] {
+  --deck-background: #1e1e2e;
+  --deck-text: #cdd6f4;
+  --deck-panel: #313244;
+  --deck-border: #585b70;
+  --deck-accent: #cba6f7;
+  --deck-on-accent: #1e1e2e;
+  --deck-secondary: #fab387;
+}
+
+[data-palette='catppuccin'] .slidev-layout {
+  background-color: var(--deck-background);
+  color: var(--deck-text);
+}
+
+[data-palette='catppuccin'] .deck-accent-text {
+  color: var(--deck-accent);
+}
+
+[data-palette='catppuccin'] .deck-accent-block {
+  background-color: var(--deck-accent);
+  color: var(--deck-on-accent);
+}
+
+[data-palette='catppuccin'] .deck-panel {
+  background-color: var(--deck-panel);
+  color: var(--deck-text);
+}
+
+[data-palette='catppuccin'] .deck-highlight {
+  border-color: var(--deck-secondary);
+}
+
+[data-palette='catppuccin'] .deck-highlight-icon {
+  background-color: var(--deck-secondary);
+}
+
+[data-palette='catppuccin'] .slidev-layout :is(th, td) {
+  border-color: var(--deck-border);
+}

@@ -1,5 +1,7 @@
 ---
 theme: default
+htmlAttrs:
+  data-palette: catppuccin
 title: Catalogue Slidev
 info: Exemples réutilisables pour créer une présentation.
 transition: fade
@@ -39,7 +41,7 @@ layout: default
 
 </v-clicks>
 
-<div v-after class="mt-4 text-sky-600">Ce texte apparaît au même clic que la conclusion.</div>
+<div v-after class="mt-4 text-sky-600 deck-accent-text">Ce texte apparaît au même clic que la conclusion.</div>
 
 ---
 layout: default
@@ -50,9 +52,9 @@ layout: default
 <p v-click="[1, 3]">Cette explication est visible aux clics 1 et 2, puis disparaît.</p>
 
 <v-switch>
-  <template #1><div class="rounded bg-sky-100 text-slate-900 p-5">Étape 1 · Observer</div></template>
-  <template #2><div class="rounded bg-sky-100 text-slate-900 p-5">Étape 2 · Comprendre</div></template>
-  <template #3><div class="rounded bg-sky-100 text-slate-900 p-5">Étape 3 · Agir</div></template>
+  <template #1><div class="rounded bg-sky-100 text-slate-900 deck-panel p-5">Étape 1 · Observer</div></template>
+  <template #2><div class="rounded bg-sky-100 text-slate-900 deck-panel p-5">Étape 2 · Comprendre</div></template>
+  <template #3><div class="rounded bg-sky-100 text-slate-900 deck-panel p-5">Étape 3 · Agir</div></template>
 </v-switch>
 
 ---
@@ -63,7 +65,7 @@ clicks: 2
 # Déplacer pour expliquer
 
 <div class="mt-16 flex items-center gap-14">
-  <div v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ x: 0, opacity: 1 }" :click-1="{ x: 100 }" :click-2="{ x: 200 }" class="rounded bg-sky-600 px-5 py-3 text-white">Une idée</div>
+  <div v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ x: 0, opacity: 1 }" :click-1="{ x: 100 }" :click-2="{ x: 200 }" class="rounded bg-sky-600 deck-accent-block px-5 py-3 text-white">Une idée</div>
 </div>
 
 <p class="mt-28 opacity-70">Avancer dans la slide pour déplacer l’objet à chaque étape.</p>
@@ -86,7 +88,7 @@ transition: view-transition
 
 # View Transition · avant
 
-<div style="view-transition-name: catalogue-card" class="mt-12 w-48 rounded bg-sky-600 p-6 text-white">Une idée</div>
+<div style="view-transition-name: catalogue-card" class="mt-12 w-48 rounded bg-sky-600 deck-accent-block p-6 text-white">Une idée</div>
 
 <p class="mt-8 opacity-70">La slide suivante réutilise le même nom pour relier les deux états.</p>
 
@@ -96,7 +98,7 @@ layout: default
 
 # View Transition · après
 
-<div style="view-transition-name: catalogue-card" class="mt-12 ml-80 w-80 rounded bg-sky-600 p-6 text-white">Une idée devient un projet</div>
+<div style="view-transition-name: catalogue-card" class="mt-12 ml-80 w-80 rounded bg-sky-600 deck-accent-block p-6 text-white">Une idée devient un projet</div>
 
 <p class="mt-8 opacity-70">Effet expérimental, selon le navigateur.</p>
 
@@ -111,10 +113,10 @@ dragPos:
 
 Double-cliquez un objet pour le sélectionner, puis déplacez-le ou redimensionnez-le.
 
-<div v-drag="'badge'" class="rounded bg-amber-200 p-4 text-slate-900">Directive v-drag</div>
+<div v-drag="'badge'" class="rounded bg-amber-200 deck-panel p-4 text-slate-900">Directive v-drag</div>
 
 <v-drag pos="caption">
-  <div class="rounded-xl bg-sky-700 text-white p-5 shadow-lg text-center">Conteneur déplaçable</div>
+  <div class="rounded-xl bg-sky-700 deck-accent-block text-white p-5 shadow-lg text-center">Conteneur déplaçable</div>
 </v-drag>
 
 ---
@@ -197,8 +199,8 @@ layout: default
 # Icônes et encadrés
 
 <div class="mt-12 flex items-center gap-6">
-  <div class="i-carbon-lightbulb text-5xl text-amber-500" aria-hidden="true" />
-  <div class="rounded border-l-4 border-amber-500 bg-amber-50 p-5 text-slate-900">Un encadré fait ressortir une idée sans alourdir la slide.</div>
+  <div class="i-carbon-lightbulb text-5xl text-amber-500 deck-highlight-icon" aria-hidden="true" />
+  <div class="rounded border-l-4 border-amber-500 bg-amber-50 deck-panel deck-highlight p-5 text-slate-900">Un encadré fait ressortir une idée sans alourdir la slide.</div>
 </div>
 
 ---
@@ -212,7 +214,7 @@ dragPos:
 Double-cliquez la capture, puis déplacez ou redimensionnez le bloc.
 
 <v-drag pos="screenshot">
-  <figure class="m-0 rounded bg-slate-100 p-3 shadow text-slate-900">
+  <figure class="m-0 rounded bg-slate-100 deck-panel p-3 shadow text-slate-900">
     <img src="/images/exemple-capture.svg" alt="Capture fictive d’un tableau de bord" class="w-full" />
     <figcaption class="text-sm mt-2">Exemple local · remplacez le fichier par votre capture</figcaption>
   </figure>
