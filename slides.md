@@ -146,7 +146,7 @@ dragPos:
 
 <div class="mt-20 flex justify-around text-xl"><span>Source</span><span>Destination</span></div>
 
-<Arrow x1="220" y1="220" x2="570" y2="220" color="#0284c7" />
+<Arrow x1="220" y1="275" x2="570" y2="275" color="#0284c7" />
 <v-drag-arrow pos="connection" color="#f97316" />
 
 <p class="mt-24 opacity-70">Bleu : flèche fixe · orange : double-cliquez pour ajuster la connexion.</p>
