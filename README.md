@@ -22,7 +22,16 @@ Ouvrir l’adresse indiquée dans le terminal. `npm run build` produit le site s
 
 ## Palette de couleurs
 
-Dans le frontmatter au début de `slides.md`, règle `htmlAttrs.data-palette` sur `catppuccin` ou `default`. Catppuccin utilise [Latte en clair et Mocha en sombre](https://catppuccin.com/palette/). La touche **D** et le bouton soleil/lune de Slidev basculent entre les modes. Les couleurs des slides sont définies dans `styles/index.css` pour Catppuccin.
+Au début de `slides.md`, change `htmlAttrs.data-palette`. La touche **D** et le bouton soleil/lune de Slidev basculent entre les modes. Les couleurs sont définies dans `styles/index.css`.
+
+| Valeur | Clair | Sombre |
+| --- | --- | --- |
+| `default` | Slidev clair | Slidev sombre |
+| `catppuccin` | Latte | Mocha |
+| `nord` | Snow Storm | Polar Night |
+| `gruvbox` | Gruvbox Light | Gruvbox Dark |
+| `rose-pine` | Dawn | Rosé Pine |
+| `solarized` | Solarized Light | Solarized Dark |
 
 ## Catalogue de départ
 
