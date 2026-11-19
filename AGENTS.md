@@ -175,6 +175,10 @@ Keep temporary task or branch notes in the thread, existing issue, or PR/MR. If 
 
 Ce dépôt est un template Slidev destiné à être cloné pour créer des présentations avec un agent. Les commandes et exemples figurent dans le README. Privilégier une architecture simple et les fonctionnalités natives de Slidev.
 
+Sur les cartes et encadrés, les bandes, liserés et bordures d’accent décoratives sur un seul côté sont interdits, quelle que soit leur couleur. Utiliser un fond uni ou une bordure neutre régulière.
+
+Utiliser Barlow pour les titres et IBM Plex Sans pour le texte courant et les chiffres (tableaux, compteurs, valeurs), sauf demande explicite de l’utilisateur.
+
 Préserver les identifiants et valeurs `dragPos` existants lors de toute modification sans rapport avec leur position : ils peuvent avoir été réglés manuellement. Déplacer un diagramme complet comme un objet unique lorsque pertinent. Distinguer compilation, test interactif et appréciation visuelle dans les comptes rendus.
 
 La priorité actuelle est un catalogue de fonctionnalités fiable et réutilisable. La direction graphique et le choix d’un ou plusieurs thèmes seront définis avec le mainteneur après cette phase.

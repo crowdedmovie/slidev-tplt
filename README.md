@@ -33,6 +33,10 @@ Pour changer de palette, règle `htmlAttrs.data-palette` dans le frontmatter ini
 | `rose-pine` | Dawn | Rosé Pine |
 | `solarized` | Solarized Light | Solarized Dark |
 
+## Typographie
+
+Le template utilise [Barlow](https://tribby.com/fonts/barlow/) pour les titres et [IBM Plex Sans](https://www.ibm.com/design/language/typography/typeface/) pour le texte et les chiffres. Conserve le bloc `fonts` en tête de `slides.md` lorsque tu remplaces les slides de démonstration. `fonts.sans` définit la police du texte et `fonts.custom` charge Barlow, appliquée aux titres dans `styles/index.css`. Slidev charge ces polices depuis Google Fonts.
+
 ## Catalogue de départ
 
 Les 23 exemples restent disponibles dans [`catalogue.md`](catalogue.md) après le remplacement de `slides.md`. Lance `npm run dev -- catalogue.md` depuis la racine pour les consulter. Le sommaire et la vue d’ensemble donnent accès aux exemples de révélations, transitions, annotations, objets déplaçables, diagrammes, code et autres fonctionnalités. Le style sert de point de départ.
@@ -40,6 +44,20 @@ Les 23 exemples restent disponibles dans [`catalogue.md`](catalogue.md) après l
 La compilation ne garantit pas les interactions ni le rendu visuel. Les View Transitions sont expérimentales et dépendent du navigateur ; le Runner Monaco prend en charge JavaScript et TypeScript par défaut.
 
 Pour les autres possibilités et leurs restrictions, voir la [documentation Slidev](https://sli.dev/features/) ; [Monaco Runner](https://sli.dev/features/monaco-run) exécute JavaScript et TypeScript par défaut. Les View Transitions dépendent du navigateur. Le build peut être volumineux avec Monaco et Mermaid.
+
+## Icônes
+
+Utilise les icônes avec parcimonie, par exemple pour distinguer deux catégories ou signaler un avertissement. Garde une seule famille pour les icônes comparables sur une même slide et un libellé visible si le sens est important. Évite les émojis sur les slides.
+
+| Besoin | Source et intégration |
+| --- | --- |
+| Action, état ou concept courant | [Carbon](https://icon-sets.iconify.design/carbon/) par défaut, par exemple `<carbon-warning />`. |
+| Concept ou objet mieux représenté | [Material Design Icons](https://icon-sets.iconify.design/mdi/) en complément de Carbon, par exemple `<mdi-account-circle />`. |
+| Illustration ponctuelle d’une idée | [Unicons Monochrome](https://icon-sets.iconify.design/uim/), par exemple `<uim-rocket />`. |
+| Produit, projet ou marque nommée | [SVG Logos](https://icon-sets.iconify.design/logos/), par exemple `<logos-vue />`. Si un fichier ou une variante officielle est requis, vérifie ses conditions d’usage et place le SVG officiel dans `public/images/`. |
+| Symbole propre au sujet | Si les collections ne proposent rien d’assez clair, crée un SVG simple assorti aux autres icônes. Intègre-le dans la slide ou place-le dans `public/images/` s’il sert ailleurs. |
+
+La slide [« Choisir une icône »](catalogue.md#choisir-une-icône) montre les quatre collections déjà installées et un SVG sur mesure. Les icônes redondantes avec un libellé portent `aria-hidden="true"`. Si un logo est affiché seul, donne-lui un nom accessible. Pour une autre collection, suis le [guide Slidev](https://sli.dev/features/icons) et ajoute son paquet Iconify si le besoin le justifie.
 
 ## Positionnement
 

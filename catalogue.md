@@ -1,5 +1,9 @@
 ---
 theme: default
+fonts:
+  sans: IBM Plex Sans
+  custom: Barlow
+  weights: '400,500,600,700'
 htmlAttrs:
   data-palette: catppuccin
 title: Catalogue Slidev
@@ -196,12 +200,34 @@ flowchart LR
 layout: default
 ---
 
-# Icônes et encadrés
+# Choisir une icône
 
-<div class="mt-12 flex items-center gap-6">
-  <div class="i-carbon-lightbulb text-5xl text-amber-500 deck-highlight-icon" aria-hidden="true" />
-  <div class="rounded border-l-4 border-amber-500 bg-amber-50 deck-panel deck-highlight p-5 text-slate-900">Un encadré fait ressortir une idée sans alourdir la slide.</div>
+<div class="mt-8 grid grid-cols-[2.5rem_18rem_1fr] items-center gap-x-5 gap-y-4 text-lg">
+  <carbon-warning class="mx-auto text-3xl" aria-hidden="true" />
+  <div class="font-semibold">Carbon</div>
+  <div>Actions, états et concepts courants</div>
+  <mdi-account-circle class="mx-auto text-3xl" aria-hidden="true" />
+  <div class="font-semibold">Material Design Icons</div>
+  <div>Complément si le symbole est plus clair</div>
+  <uim-rocket class="mx-auto text-3xl" aria-hidden="true" />
+  <div class="font-semibold">Unicons Monochrome</div>
+  <div>Illustration ponctuelle d’une idée</div>
+  <logos-vue class="mx-auto text-3xl" aria-hidden="true" />
+  <div class="font-semibold">SVG Logos</div>
+  <div>Identification d’une technologie, ici Vue</div>
+  <svg class="mx-auto h-8 w-8" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M16 8v8m0 0H7v8m9-8h9v8" />
+    <circle cx="16" cy="5" r="3" />
+    <path d="M4 24h6v5H4zm18 0h6v5h-6z" />
+  </svg>
+  <div class="font-semibold">SVG sur mesure</div>
+  <div>Symbole propre au sujet, ici un flux qui se divise</div>
 </div>
+
+<!--
+- Démo des familles → en pratique, une seule famille pour une série comparable
+- Logo → SVG officiel si une variante précise est requise
+-->
 
 ---
 layout: default

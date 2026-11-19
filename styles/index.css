@@ -1,3 +1,12 @@
+.slidev-layout :is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Barlow', 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+
+.slidev-layout ul {
+  list-style-type: disc;
+}
+
 /* Catppuccin Latte and Mocha: https://catppuccin.com/palette/ */
 html[data-palette='catppuccin'] {
   --deck-background: #eff1f5;
@@ -120,10 +129,6 @@ html.dark[data-palette='solarized'] {
 :is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-panel {
   background-color: var(--deck-panel);
   color: var(--deck-text);
-}
-
-:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-highlight {
-  border-color: var(--deck-secondary);
 }
 
 :is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-highlight-icon {
