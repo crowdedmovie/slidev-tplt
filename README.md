@@ -45,6 +45,18 @@ La compilation ne garantit pas les interactions ni le rendu visuel. Les View Tra
 
 Pour les autres possibilités et leurs restrictions, voir la [documentation Slidev](https://sli.dev/features/) ; [Monaco Runner](https://sli.dev/features/monaco-run) exécute JavaScript et TypeScript par défaut. Les View Transitions dépendent du navigateur. Le build peut être volumineux avec Monaco et Mermaid.
 
+## Icônes
+
+Utilise les icônes avec parcimonie, par exemple pour distinguer deux catégories ou signaler un avertissement. Garde un libellé visible si le sens est important. Évite les émojis sur les slides.
+
+| Besoin | Source et intégration |
+| --- | --- |
+| Action, état ou concept courant | [Carbon sur Iconify](https://icon-sets.iconify.design/carbon/), déjà disponible dans le template. Vérifie le nom dans la collection et utilise une classe `i-carbon-<nom>`, comme `i-carbon-idea`, `i-carbon-warning` ou `i-carbon-checkmark`. |
+| Produit, projet ou marque nommée | Récupère le SVG dans les ressources officielles du projet ou de la marque, vérifie ses conditions d’usage et place-le dans `public/images/`. Utilise un texte alternatif si le nom ne figure pas à côté. |
+| Symbole propre au sujet | Si Carbon ne propose rien d’assez clair, crée un SVG simple assorti aux autres icônes et conserve-le dans `public/images/`. |
+
+La section « Icônes et encadrés » du [catalogue](catalogue.md#icônes-et-encadrés) montre une icône Carbon. L’icône y est redondante avec le texte et porte donc `aria-hidden="true"`. Pour une autre collection, suis le [guide Slidev](https://sli.dev/features/icons) et ajoute son paquet Iconify seulement si le besoin le justifie.
+
 ## Positionnement
 
 En mode développement, double-cliquer un objet déplaçable pour le déplacer, le redimensionner ou le tourner. Les coordonnées sont stockées dans le frontmatter `dragPos` sous la forme `gauche,haut,largeur,hauteur,rotation`. Conserver ces valeurs et leurs identifiants lors des modifications sans rapport avec la position. Préférer le frontmatter aux coordonnées intégrées à la directive : [Slidev signale des limites de mise à jour de ces dernières](https://sli.dev/features/draggable.html). Garder les titres et paragraphes dans le flux normal ; encapsuler un diagramme complet dans un conteneur lorsque son déplacement global est utile.

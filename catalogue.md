@@ -203,7 +203,7 @@ layout: default
 # Icônes et encadrés
 
 <div class="mt-12 flex items-center gap-6">
-  <div class="i-carbon-lightbulb text-5xl text-amber-500 deck-highlight-icon" aria-hidden="true" />
+  <div class="i-carbon-idea text-5xl text-amber-500 deck-highlight-icon" aria-hidden="true" />
   <div class="rounded bg-slate-100 deck-panel p-5 text-slate-900">Un encadré fait ressortir une idée sans alourdir la slide.</div>
 </div>
 

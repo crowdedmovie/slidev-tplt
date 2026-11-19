@@ -13,6 +13,7 @@ disable-model-invocation: true
 - Choisis une palette parmi les valeurs de `htmlAttrs.data-palette` prises en charge par le template : `default` (Slidev), `catppuccin` (Latte/Mocha), `nord` (Snow Storm/Polar Night), `gruvbox` (Light/Dark), `rose-pine` (Dawn/Rosé Pine) et `solarized` (Light/Dark). Le [README](../../../README.md#palette-de-couleurs) décrit le réglage et les variantes. Inscris la valeur exacte dans le plan et précise le mode à vérifier selon les conditions de diffusion. Respecte la palette demandée si l’utilisateur a fait un choix explicite.
 - Adapte la hiérarchie et les dispositions au sujet, au public et aux conditions de présentation. Dans le plan, prévois Barlow pour les titres et IBM Plex Sans pour le texte courant et les chiffres, sauf demande explicite de l’utilisateur.
 - Pour les cartes et encadrés, prévois un fond uni ou une bordure neutre régulière. N’utilise aucun liseré, bande ou bordure d’accent décorative sur un seul côté, quelle que soit sa couleur.
+- Prévois une icône uniquement quand elle aide à distinguer, repérer ou comprendre un élément. Indique son rôle et sa source dans le plan : Carbon pour les actions, états et concepts courants, SVG officiel pour un logo, SVG sur mesure pour un symbole propre au sujet sans équivalent clair dans Carbon. Évite les émojis sur les slides. Consulte les [conventions d’intégration](../../../README.md#icônes).
 
 ## 2. Concevoir la mise en scène et le rythme
 

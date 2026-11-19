@@ -18,6 +18,8 @@ Ajuste les détails de réalisation pour la lisibilité et la fiabilité. Si une
 
 Pour les cartes et encadrés, utilise un fond uni ou une bordure neutre régulière. N’ajoute ni liseré, ni bande, ni bordure d’accent décorative sur un seul côté, quelle que soit sa couleur ou sa technique de réalisation.
 
+Applique les [conventions d’intégration des icônes](../../../README.md#icônes). Pour Carbon, vérifie l’identifiant dans la collection avant d’écrire la classe `i-carbon-<nom>`. Utilise un SVG local pour un logo officiel ou un symbole sur mesure. Vérifie dans Playwright que les icônes apparaissent et restent lisibles dans les modes prévus.
+
 Conserve le bloc `fonts` du frontmatter quand tu remplaces les slides de démonstration. Les titres utilisent Barlow via la feuille de style du template. Le texte courant et les chiffres utilisent IBM Plex Sans via `fonts.sans`, sauf choix différent demandé par l’utilisateur. Lors du contrôle dans Playwright, vérifie que les polices prévues ont effectivement chargé.
 
 ## Écrire les notes d’oral
