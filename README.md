@@ -47,15 +47,17 @@ Pour les autres possibilités et leurs restrictions, voir la [documentation Slid
 
 ## Icônes
 
-Utilise les icônes avec parcimonie, par exemple pour distinguer deux catégories ou signaler un avertissement. Garde un libellé visible si le sens est important. Évite les émojis sur les slides.
+Utilise les icônes avec parcimonie, par exemple pour distinguer deux catégories ou signaler un avertissement. Garde une seule famille pour les icônes comparables sur une même slide et un libellé visible si le sens est important. Évite les émojis sur les slides.
 
 | Besoin | Source et intégration |
 | --- | --- |
-| Action, état ou concept courant | [Carbon sur Iconify](https://icon-sets.iconify.design/carbon/), déjà disponible dans le template. Vérifie le nom dans la collection et utilise une classe `i-carbon-<nom>`, comme `i-carbon-idea`, `i-carbon-warning` ou `i-carbon-checkmark`. |
-| Produit, projet ou marque nommée | Récupère le SVG dans les ressources officielles du projet ou de la marque, vérifie ses conditions d’usage et place-le dans `public/images/`. Utilise un texte alternatif si le nom ne figure pas à côté. |
-| Symbole propre au sujet | Si Carbon ne propose rien d’assez clair, crée un SVG simple assorti aux autres icônes et conserve-le dans `public/images/`. |
+| Action, état ou concept courant | [Carbon](https://icon-sets.iconify.design/carbon/) par défaut, par exemple `<carbon-warning />`. |
+| Concept ou objet mieux représenté | [Material Design Icons](https://icon-sets.iconify.design/mdi/) en complément de Carbon, par exemple `<mdi-account-circle />`. |
+| Illustration ponctuelle d’une idée | [Unicons Monochrome](https://icon-sets.iconify.design/uim/), par exemple `<uim-rocket />`. |
+| Produit, projet ou marque nommée | [SVG Logos](https://icon-sets.iconify.design/logos/), par exemple `<logos-vue />`. Si un fichier ou une variante officielle est requis, vérifie ses conditions d’usage et place le SVG officiel dans `public/images/`. |
+| Symbole propre au sujet | Si les collections ne proposent rien d’assez clair, crée un SVG simple assorti aux autres icônes. Intègre-le dans la slide ou place-le dans `public/images/` s’il sert ailleurs. |
 
-La section « Icônes et encadrés » du [catalogue](catalogue.md#icônes-et-encadrés) montre une icône Carbon. L’icône y est redondante avec le texte et porte donc `aria-hidden="true"`. Pour une autre collection, suis le [guide Slidev](https://sli.dev/features/icons) et ajoute son paquet Iconify seulement si le besoin le justifie.
+La slide [« Choisir une icône »](catalogue.md#choisir-une-icône) montre les quatre collections déjà installées et un SVG sur mesure. Les icônes redondantes avec un libellé portent `aria-hidden="true"`. Si un logo est affiché seul, donne-lui un nom accessible. Pour une autre collection, suis le [guide Slidev](https://sli.dev/features/icons) et ajoute son paquet Iconify si le besoin le justifie.
 
 ## Positionnement
 
