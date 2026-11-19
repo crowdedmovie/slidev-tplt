@@ -200,7 +200,7 @@ layout: default
 
 <div class="mt-12 flex items-center gap-6">
   <div class="i-carbon-lightbulb text-5xl text-amber-500 deck-highlight-icon" aria-hidden="true" />
-  <div class="rounded border-l-4 border-amber-500 bg-amber-50 deck-panel deck-highlight p-5 text-slate-900">Un encadré fait ressortir une idée sans alourdir la slide.</div>
+  <div class="rounded bg-slate-100 deck-panel p-5 text-slate-900">Un encadré fait ressortir une idée sans alourdir la slide.</div>
 </div>
 
 ---

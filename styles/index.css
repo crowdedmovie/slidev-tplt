@@ -122,10 +122,6 @@ html.dark[data-palette='solarized'] {
   color: var(--deck-text);
 }
 
-:is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-highlight {
-  border-color: var(--deck-secondary);
-}
-
 :is([data-palette='catppuccin'], [data-palette='nord'], [data-palette='gruvbox'], [data-palette='rose-pine'], [data-palette='solarized']) .deck-highlight-icon {
   background-color: var(--deck-secondary);
 }

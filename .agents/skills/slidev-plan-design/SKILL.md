@@ -11,6 +11,7 @@ disable-model-invocation: true
 - Utilise le `presentation-brief.md` du projet ou les éléments équivalents fournis. Vérifie le sujet, l’objectif, le niveau du public, la durée de l’exposé, la place des questions et les contraintes de diffusion. Demande seulement les précisions qui changeraient le déroulé ou le rendu. Si une preuve essentielle manque, indique quoi vérifier et avance sur le reste.
 - Lis le code du [catalogue Slidev](../../../catalogue.md) et les indications du [README](../../../README.md). Repère les dispositions, les styles et les fonctionnalités qui servent le sujet. Pour les exemples retenus, examine leur syntaxe, leur déclenchement et leur rendu. Ouvre le catalogue si l’effet ou sa lisibilité mérite d’être vu.
 - Adapte la direction visuelle au sujet, au public et aux conditions de présentation. Choisis la palette, la typographie, la hiérarchie, les dispositions et les modes de rendu utiles. Appuie-toi sur les exemples du catalogue pour rendre ces choix concrets et indique les adaptations nécessaires.
+- Pour les cartes et encadrés, prévois un fond uni ou une bordure neutre régulière. N’utilise aucun liseré, bande ou bordure d’accent décorative sur un seul côté, quelle que soit sa couleur.
 
 ## 2. Concevoir la mise en scène et le rythme
 
