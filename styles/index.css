@@ -1,3 +1,7 @@
+.slidev-layout :is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Barlow', 'IBM Plex Sans', sans-serif;
+}
+
 /* Catppuccin Latte and Mocha: https://catppuccin.com/palette/ */
 html[data-palette='catppuccin'] {
   --deck-background: #eff1f5;

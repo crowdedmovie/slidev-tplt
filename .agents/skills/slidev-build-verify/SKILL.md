@@ -16,6 +16,8 @@ Ajuste les détails de réalisation pour la lisibilité et la fiabilité. Si une
 
 Pour les cartes et encadrés, utilise un fond uni ou une bordure neutre régulière. N’ajoute ni liseré, ni bande, ni bordure d’accent décorative sur un seul côté, quelle que soit sa couleur ou sa technique de réalisation.
 
+Conserve le bloc `fonts` du frontmatter quand tu remplaces les slides de démonstration. Les titres utilisent Barlow via la feuille de style du template. Le texte courant et les chiffres utilisent IBM Plex Sans via `fonts.sans`, sauf choix différent demandé par l’utilisateur. Lors du contrôle dans Playwright, vérifie que les polices prévues ont effectivement chargé.
+
 ## Écrire les notes d’oral
 
 Ajoute les notes à la fin de chaque slide, dans un commentaire HTML avant le séparateur suivant. Écris des repères de prise de parole en fragments courts et reliés. Garde l’idée à transmettre, les chiffres utiles, les nuances et le lien avec la suite. Chaque ligne doit permettre à l’orateur de reformuler naturellement. Évite les phrases prêtes à lire et les mots-clés isolés. Utilise des flèches ou des symboles pour rendre les liens explicites et place les repères de temps et de clic là où ils servent.

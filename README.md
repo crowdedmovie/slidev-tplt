@@ -33,6 +33,10 @@ Pour changer de palette, règle `htmlAttrs.data-palette` dans le frontmatter ini
 | `rose-pine` | Dawn | Rosé Pine |
 | `solarized` | Solarized Light | Solarized Dark |
 
+## Typographie
+
+Le template utilise [Barlow](https://tribby.com/fonts/barlow/) pour les titres et [IBM Plex Sans](https://www.ibm.com/design/language/typography/typeface/) pour le texte et les chiffres. Conserve le bloc `fonts` en tête de `slides.md` lorsque tu remplaces les slides de démonstration. `fonts.sans` définit la police du texte et `fonts.custom` charge Barlow, appliquée aux titres dans `styles/index.css`. Slidev charge ces polices depuis Google Fonts.
+
 ## Catalogue de départ
 
 Les 23 exemples restent disponibles dans [`catalogue.md`](catalogue.md) après le remplacement de `slides.md`. Lance `npm run dev -- catalogue.md` depuis la racine pour les consulter. Le sommaire et la vue d’ensemble donnent accès aux exemples de révélations, transitions, annotations, objets déplaçables, diagrammes, code et autres fonctionnalités. Le style sert de point de départ.
