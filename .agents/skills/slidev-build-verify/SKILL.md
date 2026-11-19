@@ -12,6 +12,8 @@ Lis `presentation-plan.md` ou son équivalent, ainsi que `presentation-brief.md`
 
 Travaille dans [`slides.md`](../../../slides.md) ou dans l’entrée indiquée par l’utilisateur. Consulte le code des exemples prévus dans le [catalogue](../../../catalogue.md) et les conventions du [README](../../../README.md). Préserve les identifiants et valeurs `dragPos` existants quand la position de l’élément reste hors du changement demandé.
 
+Applique la valeur `htmlAttrs.data-palette` du plan dans le frontmatter du fichier d’entrée et contrôle le rendu dans les modes prévus. Si la palette ou les références aux exemples manquent dans un plan fourni, consulte la liste des [palettes disponibles](../../../README.md#palette-de-couleurs) et parcours le catalogue avant de compléter les choix techniques.
+
 Ajuste les détails de réalisation pour la lisibilité et la fiabilité. Si une limite technique impose un écart sur un effet prévu ou sur le déroulé, explique l’impact et soumets une solution de remplacement si elle change sensiblement l’oral ou le rendu. Signale toute donnée manquante dont dépend la présentation.
 
 Pour les cartes et encadrés, utilise un fond uni ou une bordure neutre régulière. N’ajoute ni liseré, ni bande, ni bordure d’accent décorative sur un seul côté, quelle que soit sa couleur ou sa technique de réalisation.
