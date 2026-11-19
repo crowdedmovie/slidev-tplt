@@ -3,6 +3,10 @@
   font-weight: 700;
 }
 
+.slidev-layout ul {
+  list-style-type: disc;
+}
+
 /* Catppuccin Latte and Mocha: https://catppuccin.com/palette/ */
 html[data-palette='catppuccin'] {
   --deck-background: #eff1f5;
